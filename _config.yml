@@ -1,1 +1,3 @@
 remote_theme: pmarsceill/just-the-docs
+last_edit_timestamp: true
+last_edit_time_format: "%b %e %Y at %I:%M %p"

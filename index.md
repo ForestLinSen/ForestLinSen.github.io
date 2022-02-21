@@ -13,3 +13,7 @@ nav_order: 1
 - UIViewController lifecycle
 - Weak self
 - Decode json object
+- DispatchQueue
+- Trick: append functions into an array
+- Use Result to handle the API result
+- Protocol
