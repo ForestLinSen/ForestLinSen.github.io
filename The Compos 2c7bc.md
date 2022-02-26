@@ -14,9 +14,9 @@ One of the basic collection view layouts is `UICollectionViewFlowLayout`. Depend
 
 Here is a simple example. We firstly define a basic `UICollectionView` and set it `collectionViewLayout` property to `UICollectionViewFlowLayout()`.
 
-```jsx
+```swift
 private let collectionView = UICollectionView(frame: .zero, 
-																							collectionViewLayout: UICollectionViewFlowLayout())
+collectionViewLayout: UICollectionViewFlowLayout())
 ```
 
 ![Untitled](The%20Compos%202c7bc/Untitled.png)
@@ -27,7 +27,7 @@ As said, we can also define our own collection view layout. What we need here is
 
 Here is a simple example:
 
-```jsx
+```swift
 let item = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(2/3),
             heightDimension: .fractionalHeight(1)))
@@ -41,24 +41,21 @@ With saying that, what we want to achieve is something like this:
 
 The red rectangle is the item we defined above. The two blue rectangles, each of which is an item, formed a vertical group. Here is the code:
 
-```jsx
+```swift
 let verticalStackItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
             heightDimension: .fractionalHeight(0.5))
 )
 
-let verticalStackGroup = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(
-																							            widthDimension: .fractionalWidth(1/3),
-																							            heightDimension: .fractionalHeight(1)), 
-																													subitem: verticalStackItem, 
-																													count: 2)
+let verticalStackGroup = NSCollectionLayoutGroup.vertical(layoutSize: NSCollectionLayoutSize(						     widthDimension: .fractionalWidth(1/3),								heightDimension: .fractionalHeight(1)), 
+								subitem: verticalStackItem, 								count: 2)
 ```
 
 Here `count: 2` means we want two `verticalStackItem` in this group.
 
 After defining the vertical group, we need another group to combine the item and the vertical group:
 
-```jsx
+```swift
 let horizontal = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1),
             heightDimension: .fractionalHeight(0.3)), subitems: [item, verticalStackGroup])
@@ -66,7 +63,7 @@ let horizontal = NSCollectionLayoutGroup.horizontal(layoutSize: NSCollectionLayo
 
 Then we define a section with the group variable defined above and return the layout finally.
 
-```jsx
+```swift
 let section = NSCollectionLayoutSection(group: horizontal)
 return UICollectionViewCompositionalLayout(section: section)
 ```
@@ -81,7 +78,7 @@ From here, we can even combine more groups together to create a more complex lay
 
 To achieve this layout, all we need to do is add a new group with three items lined horizontally.
 
-```jsx
+```swift
 // Define the yellow rectangles
 let tripletItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
             widthDimension: .fractionalWidth(1/3),
@@ -91,7 +88,7 @@ let tripletItem = NSCollectionLayoutItem(layoutSize: NSCollectionLayoutSize(
 let tripletHorizontalGroup = NSCollectionLayoutGroup.horizontal(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-								// // we also need to change to the heightDimension of the horizontal group to 0.5
+						// we also need to change to the heightDimension of the horizontal group to 0.5
                 heightDimension: .fractionalHeight(0.5)
             ),
             subitem: tripletItem,
@@ -99,7 +96,7 @@ let tripletHorizontalGroup = NSCollectionLayoutGroup.horizontal(
 
 // combine the two groups together
 let verticalGroup = NSCollectionLayoutGroup.vertical(
-            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3)),
+            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), h					eightDimension: .fractionalHeight(0.3)),
             subitems: [horizontal, tripletHorizontalGroup]
         )
 ```
