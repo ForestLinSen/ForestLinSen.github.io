@@ -19,7 +19,7 @@ private let collectionView = UICollectionView(frame: .zero,
 collectionViewLayout: UICollectionViewFlowLayout())
 ```
 
-![Untitled](The%20Compos%202c7bc/Untitled.png)
+<img src="The%20Compos%202c7bc/Untitled.png" alt="drawing" width="300"/>
 
 ### UICollectionViewCompositionalLayout
 
@@ -37,7 +37,7 @@ When creating the item object we need to specify the layout size. We can use abs
 
 With saying that, what we want to achieve is something like this:
 
-![Untitled](The%20Compos%202c7bc/Untitled%201.png)
+<img src="The%20Compos%202c7bc/Untitled%201.png" alt="drawing" width="400"/>
 
 The red rectangle is the item we defined above. The two blue rectangles, each of which is an item, formed a vertical group. Here is the code:
 
@@ -70,7 +70,7 @@ return UICollectionViewCompositionalLayout(section: section)
 
 Here is what the UI looks like now:
 
-![Untitled](The%20Compos%202c7bc/Untitled%202.png)
+<img src="The%20Compos%202c7bc/Untitled%202.png" alt="drawing" width="300"/>
 
 From here, we can even combine more groups together to create a more complex layout. This is what we want to achieve:
 
@@ -103,4 +103,4 @@ let verticalGroup = NSCollectionLayoutGroup.vertical(
 
 This is what it looks like now:
 
-![Untitled](The%20Compos%202c7bc/Untitled%204.png)
+<img src="The%20Compos%202c7bc/Untitled%204.png" alt="drawing" width="300"/>
