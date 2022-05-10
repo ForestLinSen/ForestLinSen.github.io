@@ -17,3 +17,5 @@ nav_order: 1
 - Trick: append functions into an array
 - Use Result to handle the API result
 - Protocol
+- Dispath Group
+- AutoLayout
