@@ -10,7 +10,7 @@
     <meta name="author" content="Sen Lin" />
     <title>Sen Lin</title>
 
-    <link rel="icon" href="images/senlin_avatar.jpg">
+    <link rel="icon" href="images/sen.JPEG">
     <link rel="stylesheet" href="css/style.css" />
     <link href="css/font-faces.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -70,7 +70,7 @@
         <div class="container">
             <div class="row personal-profile">
                 <div class="col-md-4 personal-profile__avatar">
-                    <img class="" src="images/senlin_avatar.jpg" alt="avatar">
+                    <img class="" src="images/sen.JPEG" alt="avatar">
                 </div>
                 <div class="col-md-8">
                     <p class="personal-profile__name">Sen Lin</p>
@@ -107,9 +107,9 @@
             <div class="col-md-10">
                 <h2 id="hello_header" class="section__title" style="text-indent: 0px;">About Me</h2>
                 <p class="section__description">
-                    Hi, I'm Sen Lin, a computer science student at Goldsmiths, University of London. My focus is on both web development and mobile development. Currently, I am working as a full-stack developer for a bar's management system. Also, I have a huge passion for mobile development, especially iOS, which I have been pursuing for the past two years. In my free time, I enjoy playing soccer and playing the piano. I am a huge fan of Chopin and love to immerse myself in his beautiful compositions. 
-                <p>                    This website primarily showcases my personal iOS projects and smaller projects that I have worked on. Please feel free to take a look at them.                </p>
-            </p>
+                    Hi, I'm Sen Lin, a computer science student at Goldsmiths, University of London. My focus is on both web development and mobile development. Currently, I am working as a full-stack developer for a bar's management system. Also, I have a huge passion for mobile development, especially iOS, which I have been pursuing for the past two years. 
+                    <br>
+                    In my free time, I enjoy playing soccer and playing the piano. I am a huge fan of Chopin and love to immerse myself in his beautiful compositions. 
             </div>
     </section>
 
@@ -119,7 +119,7 @@
     <section id="portfolio" class="container section">
         <div class="row">
             <div class="col-md-12">
-                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Personal Projects</h2>
+                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Projects</h2>
             </div>
         </div>
         <div class="row portfolio-menu">
@@ -127,19 +127,99 @@
                 <nav>
                     <ul>
                         <li><a href="#" data-portfolio-target-tag="all">all</a></li>
+                        <li><a href="#" data-portfolio-target-tag="Commercial Projects">Commercial Projects</a></li>
+                        <li><a href="#" data-portfolio-target-tag="Python Projects">Python Projects</a></li>
                         <li><a href="#" data-portfolio-target-tag="iOS Apps">iOS Apps</a></li>
-                        <li><a href="#" data-portfolio-target-tag="Other Projects">Other Projects</a></li>
+                        
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="portfolio-cards">
 
+                        <!-- commercial -->
+                        <div class="row project-card"  data-portfolio-tag="Commercial Projects">
+                            <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Ginsbar">
+                                <img class="" src="./images/GinsBar.png" alt="project-img">
+                            </div>
+                            <div class="col-md-6 col-lg-7 project-card__info">
+                                <h3 class="project-card__title">Gin's Bar Management System </h3>
+                                <p class="project-card__description">
+                                    Full-stack Developer<br><br>
+                                    Using MERN stack(MongoDB, Express.js, React, and Node.js) to develop and maintain a bar management system to manage daily transactions, customer orders, and customer service for the all the bars within the Gin's Bar chain
+            
+                                    <p class="keywords">Keywords:</p>
+                                <ul class="tags">
+                                    <li>React</li>
+                                    <li>Redux</li>
+                                    <li>MaterialUI</li>
+                                    <li>Node.js</li>
+                                    <li>MongoDB</li>
+                                    <li>JWT</li>
+                                </ul>
+                            </div>
+                        </div>
+
+            <!-- autogpt -->
+            <div class="row project-card"  data-portfolio-tag="Python Projects">
+
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">AutoGPT-Plugins </h3>
+                    <p class="project-card__description">
+                        Contributor<br><br>
+                        <b>Financial Data Plugin</b> This plugin enables AutoGPT to fetch and process financial data for a given company, including stock metrics, quarterly financial reports, and recent market news. Users can use the plugin to automatically analyse financial data using Auto-GPT or generate comprehensive financial reports by providing the gathered data to ChatGPT.
+                        <br><br>
+                        <b>Bing and Baidu Search Plugin</b> Integrated Bing and Baidu Search functionalities into the AutoGPT program, expanding language and region search capabilities. Bing search functionality is achieved by integrating Azure's API and Baidu search functionality is achieved by web scraping techniques.
+
+                        <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>GPT</li>
+                        <li>Azure</li>
+                        <li>yfinance</li>
+                        <li>pandas</li>
+                        <li>BeautifulSoup</li>
+                        <li>unittest</li>
+                    </ul>
+                    <a href="https://github.com/Significant-Gravitas/Auto-GPT-Plugins" class="project-card__link">
+                        GitHub: Auto-GPT-Plugins</a>
+                </div>
+
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#AutoGPT">
+                    <img class="" src="./images/autogpt_image.png" alt="project-img">
+                </div>
+            </div>
+
+                                    <!-- Financial Projects -->
+            <div class="row project-card" data-portfolio-tag="Python Projects">
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Finance">
+                    <img class="" src="images/finance.png" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Efficient Frontier</h3>
+                    
+                    <p class="project-card__description">
+                        Author<br><br>
+                        The efficient frontier calculator based on Markowitz’s Modern Portfolio Theory(MPT). This programme can fetch the financial data for multiple symbols and calculate the best portfolio based on the Sharp ratio.
+                        <br><br>This programme can present an intuitive graph to show all the simulated portfolio and their corresponding volatility and return and give user the best portfolio based on selected assets.
+                    </p>
+                    <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Scipy</li>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Yahoo Finance API</li>
+                    </ul>
+                    <a href="https://github.com/ForestLinSen/finance" class="project-card__link">Github:
+                        finance</a>
+                </div>
+
+
+            </div>
+
             <!-- iOS Apps -->
             <div class="row project-card"  data-portfolio-tag="iOS Apps">
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ShotDiary">
-                    <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
-                </div>
+
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">ShotDiary</h3>
                     <p class="project-card__description">
@@ -156,9 +236,16 @@
                     <a href="https://github.com/ForestLinSen/ShotDiary/tree/main" class="project-card__link">
                         GitHub: ShotDiary</a>
                 </div>
+
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ShotDiary">
+                    <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
+                </div>
             </div>
 
             <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Stocks">
+                    <img class="" src="./images/stock_complete.jpg" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Stock (Apple's Stock App Clone) </h3>
                     <p class="project-card__description">
@@ -176,15 +263,11 @@
                     <a href="https://github.com/ForestLinSen/Stocks" class="project-card__link">
                         Github: Stocks</a>
                 </div>
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Stocks">
-                    <img class="" src="./images/stock_complete.jpg" alt="project-img">
-                </div>
+
             </div>
 
             <div class="row project-card"  data-portfolio-tag="iOS Apps">
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Spotify">
-                    <img class="" src="./images/spotify_complete.jpg" alt="project-img">
-                </div>
+
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Spotify Manager</h3>
                     <p class="project-card__description">
@@ -202,29 +285,12 @@
                     <a href="https://github.com/ForestLinSen/SpotifyManager" class="project-card__link">Github:
                         Spotify Manager</a>
                 </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Spotify">
+                    <img class="" src="./images/spotify_complete.jpg" alt="project-img">
+                </div>
             </div>
 
-            <!-- Other Projects -->
-            <div class="row project-card" data-portfolio-tag="Other Projects">
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Finance">
-                    <img class="" src="images/finance.png" alt="project-img">
-                </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Efficient Frontier</h3>
-                    <p class="project-card__description">
-                        A Python programme that can be used to calculate the efficient frontier with given stocks.                    </p>
-                    <p class="keywords">Keywords:</p>
-                    <ul class="tags">
-                        <li>Python</li>
-                        <li>Scipy</li>
-                        <li>Pandas</li>
-                        <li>Numpy</li>
-                        <li>Yahoo Finance API</li>
-                    </ul>
-                    <a href="https://github.com/ForestLinSen/finance" class="project-card__link">Github:
-                        finance</a>
-                </div>
-            </div>
+
 
         </div>
     </section>
@@ -236,6 +302,22 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="Ginsbar" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/GinsBarBIg.png" alt="project-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade portfolio-modal" id="AutoGPT" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/autogpt_image.png" alt="project-img">
                 </div>
             </div>
         </div>
