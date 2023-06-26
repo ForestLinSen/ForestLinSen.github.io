@@ -107,7 +107,7 @@
             <div class="col-md-10">
                 <h2 id="hello_header" class="section__title" style="text-indent: 0px;">About Me</h2>
                 <p class="section__description">
-                    Hi, I'm Sen Lin, a computer science student at Goldsmiths, University of London. My focus is on both web development and mobile development. Currently, I am working as a full-stack developer for a bar's management system. Also, I have a huge passion for mobile development, especially iOS, which I have been pursuing for the past two years. 
+                    Hi, I'm Sen Lin, a computer science student at Goldsmiths, University of London. My focus is on both web development and mobile development. Currently, I am working as a front-end developer at Radical X. Also, I have a huge passion for mobile development, especially iOS, which I have been pursuing for the past two years. 
                     <br>
                     In my free time, I enjoy playing soccer and playing the piano. I am a huge fan of Chopin and love to immerse myself in his beautiful compositions. 
             </div>
@@ -135,34 +135,59 @@
                 </nav>
             </div>
         </div>
+
         <div class="portfolio-cards">
 
-                        <!-- commercial -->
-                        <div class="row project-card"  data-portfolio-tag="Commercial Projects">
-                            <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Ginsbar">
-                                <img class="" src="./images/ginsbar_logo.JPG" alt="project-img">
-                            </div>
-                            <div class="col-md-6 col-lg-7 project-card__info">
-                                <h3 class="project-card__title">Gin's Bar Management System </h3>
-                                <p class="project-card__description">
-                                    Full-stack Developer<br><br>
-                                    Using MERN stack(MongoDB, Express.js, React, and Node.js) to develop and maintain a bar management system to manage daily transactions, customer orders, and customer service for the all the bars within the Gin's Bar chain
-            
-                                    <p class="keywords">Keywords:</p>
-                                <ul class="tags">
-                                    <li>React</li>
-                                    <li>Redux</li>
-                                    <li>MaterialUI</li>
-                                    <li>Node.js</li>
-                                    <li>MongoDB</li>
-                                    <li>JWT</li>
-                                </ul>
-                            </div>
-                        </div>
+            <!-- chords finder -->
+            <div class="row project-card"  data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ChordsFinder">
+                    <img class="" src="./images/chords_finder.png" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Chords Finder </h3>
+                    <p class="project-card__description">
+                        Developer<br><br>
+                        ChordFinder is a tool to empower musicians and music enthusiasts alike. With just a press of a few notes on the keyboard, this app unlocks a world of harmonies by instantly revealing all the possible chords that can be formed using those notes.
+
+                        <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>SwiftUI</li>
+                    </ul>
+                    <a href="https://apps.apple.com/app/id6450187213?platform=iphone" class="project-card__link">
+                        App Store: Chords Finder</a>
+                </div>
+            </div>
+
+            <!-- commercial -->
+            <div class="row project-card"  data-portfolio-tag="Commercial Projects">
+
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Gin's Bar Management System </h3>
+                    <p class="project-card__description">
+                        Full-stack Developer<br><br>
+                        Using MERN stack(MongoDB, Express.js, React, and Node.js) to develop and maintain a bar management system to manage daily transactions, customer orders, and customer service for the all the bars within the Gin's Bar chain
+
+                        <p class="keywords">Keywords:</p>
+                    <ul class="tags">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>MaterialUI</li>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>JWT</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Ginsbar">
+                    <img class="" src="./images/ginsbar_logo.JPG" alt="project-img">
+                </div>
+            </div>
 
             <!-- autogpt -->
             <div class="row project-card"  data-portfolio-tag="Python Projects">
-
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#AutoGPT">
+                    <img class="" src="./images/autogpt_image.png" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">AutoGPT-Plugins </h3>
                     <p class="project-card__description">
@@ -184,16 +209,12 @@
                         GitHub: Auto-GPT-Plugins</a>
                 </div>
 
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#AutoGPT">
-                    <img class="" src="./images/autogpt_image.png" alt="project-img">
-                </div>
+
             </div>
 
                                     <!-- Financial Projects -->
             <div class="row project-card" data-portfolio-tag="Python Projects">
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Finance">
-                    <img class="" src="images/finance.png" alt="project-img">
-                </div>
+
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Efficient Frontier</h3>
                     
@@ -214,12 +235,16 @@
                         finance</a>
                 </div>
 
-
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Finance">
+                    <img class="" src="images/finance.png" alt="project-img">
+                </div>
             </div>
 
             <!-- iOS Apps -->
             <div class="row project-card"  data-portfolio-tag="iOS Apps">
-
+                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ShotDiary">
+                    <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">ShotDiary</h3>
                     <p class="project-card__description">
@@ -237,32 +262,6 @@
                         GitHub: ShotDiary</a>
                 </div>
 
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#ShotDiary">
-                    <img class="" src="./images/ShotDiary _complete.jpg" alt="project-img">
-                </div>
-            </div>
-
-            <div class="row project-card"  data-portfolio-tag="iOS Apps">
-                <div class="col-md-6 col-lg-5 project-card__img" data-toggle="modal" data-target="#Stocks">
-                    <img class="" src="./images/stock_complete.jpg" alt="project-img">
-                </div>
-                <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">Stock (Apple's Stock App Clone) </h3>
-                    <p class="project-card__description">
-                        Look up your favourite stock in the thousands of market data and add it to your watchlist. Both the price chart and the essential data are available for browsing. To get the most recent market news, you can also check out the top stories or the company news.                    </p>
-                    <p class="keywords">Keywords:</p>
-                    <ul class="tags">
-                        <li>UIKit</li>
-                        <li>UserDefaults</li>
-                        <li>Finnhub API</li>
-                        <li>MVVM/Singleton</li>
-                        <li>Concurrency</li>
-                        <li>Chart.swift</li>
-                        <li>FloatingPanel.swift</li>
-                    </ul>
-                    <a href="https://github.com/ForestLinSen/Stocks" class="project-card__link">
-                        Github: Stocks</a>
-                </div>
 
             </div>
 
@@ -298,6 +297,14 @@
     <hr>
 
         <!-- Portfolio Modal -->
+        <div class="modal fade portfolio-modal" id="ChordsFinder" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <img class="" src="./images/chords_finder.png" alt="project-img">
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade portfolio-modal" id="ShotDiary" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
